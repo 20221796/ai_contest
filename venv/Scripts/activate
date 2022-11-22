@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Owner\OneDrive\바탕 화면\개발\AI 경진대회\venv"
+VIRTUAL_ENV="C:\Users\Owner\OneDrive\바탕 화면\개발\AI 경진대회\ai_contest\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
