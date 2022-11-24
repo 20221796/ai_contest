@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,7 +17,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#" onclick="location.href='home.html'">Bodygree</a>
+        <a class="navbar-brand" href="#" onclick="location.href='home'">Bodygree</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,16 +25,16 @@
           <ul class="navbar-nav">
             <li class="nav-item active">
                <div class="d-grid gap-3">
-                 <a class="nav-link" href="#" onclick="location.href='dignore.html'">진단하기 <span class="sr-only">(current)</span></a>
+                 <a class="nav-link" href="#" onclick="location.href='dignore'">진단하기 <span class="sr-only">(current)</span></a>
                </li>
                <li class="nav-item">
-                 <a class="nav-link" href="#" onclick="location.href='history.html'">히스토리 열람 <span class="sr-only">(current)</span></a>
+                 <a class="nav-link" href="#" onclick="location.href='history'">히스토리 열람 <span class="sr-only">(current)</span></a>
                </li>
                <li class="nav-item">
-                 <a class="nav-link" href="#" onclick="location.href='correction.html'">자세교정 <span class="sr-only">(current)</span></a>
+                 <a class="nav-link" href="#" onclick="location.href='correction'">자세교정 <span class="sr-only">(current)</span></a>
                </li>
                </div>
-            <button type="button" class="btn btn-outline-dark" onclick="location.href='login.html'">로그인</button>
+            <button type="button" class="btn btn-outline-dark" onclick="location.href='login'">로그인</button>
           </ul>
         </div>
       </nav>
@@ -43,14 +45,14 @@
                  id="date"
                  max="2022-11-01"
                  min="2022-11-30"
-                 value="2022-11-16">
+                 value="2022-11-25">
         </label>
-        <h2>2022-11-16</h2>
+        <h2>2022-11-25</h2>
         <div class="card" style="width:1050px">
-          <img class="card-img-top" src="bodygree.JPG" alt="Card image" style="width:100%">
+          <img class="card-img-top" src="{%static 'bad.jpg' %}" alt="Card image" style="width:50%">
           <div class="card-body">
-            <h4 class="card-title">상태가 매우 안좋네요!</h4>
-            <p class="card-text">목이 너무 튀어나와 있고 오른쪽으로 치우치는 경향이 있습니다.</p>
+            <h4 class="card-title">척추 측만증이 의심됩니다!</h4>
+            <!-- <p class="card-text">목이 너무 튀어나와 있고 오른쪽으로 치우치는 경향이 있습니다.</p> -->
           </div>
         </div>
       </div>
